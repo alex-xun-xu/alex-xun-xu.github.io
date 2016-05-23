@@ -1,0 +1,172 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Discovery of Shared Semantic Spaces for Multi-Scene Video Query and Summarization</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xun Xu">
+    <meta name="author" content="Xun Xu">
+	<meta name="keywords" content="Xun Xu, qmul, Computer Vision, Traffic Analysis, Video Summarization, Multi-Scene, Scene Understanding">
+    <!-- Le styles -->
+    <link href="../../css/bootstrap/css/bootstrap.css" rel="stylesheet">
+	
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="../../css/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="http://www.eecs.qmul.ac.uk/~xx302/#HOME"><strong>Home</strong></a></li>
+              <li><a href="http://www.eecs.qmul.ac.uk/~xx302/#ABOUTME"><strong>About Me</strong></a></li>
+              <li><a href="http://www.eecs.qmul.ac.uk/~xx302/#PUBLICATION"><strong>Publication</strong></a></li>
+			  <li><a href="http://www.eecs.qmul.ac.uk/~xx302/#RESOURCE"><strong>Resource</strong></a></li>
+            </ul>
+			<a href="http://www.qmul.ac.uk/" target="_blank"><img align="right" height="80" width="145" src="../../img/logo_QMUL.png"></a>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+		<section id="Title">
+			<div class="page-header">
+				<h2>Discovery of Shared Semantic Spaces for Multi-Scene Video Query and Summarization</h2>
+			</div>
+
+<div id="Authors">
+<p style="font-size:23px" align="center"><a href="http://www.eecs.qmul.ac.uk/~xx302/">Xun Xu</a>, <a href="http://www.eecs.qmul.ac.uk/~tmh/" target="_blank">Timothy Hospedales</a> and <a href="http://www.eecs.qmul.ac.uk/~sgg/" target="_blank">Shaogang Gong</a> <br>
+ <p style="font-size:18px" align="center">Queen Mary, University of London</P>
+</div>
+
+<div id="Downloads">
+<p style="font-size:18px" align="center"> Downloads: [<a href="../../Doc/Publication/2015/XuHG_TCSVT2015.pdf" target="_blank">PDF</a>] [<a href="../../Doc/Publication/2015/XuHG_TCSVT2015_Supp.pdf" target="_blank">Supplemntary</a>] [<a href="http://www.eecs.qmul.ac.uk/~xx302/ProjectPage/TCSVT_15/data/MultiScene.pdf" target="_blank">Slides</a>] [<a href="./data/Readme" target="_blank">Dataset Introduction</a>] [<a href="https://drive.google.com/file/d/0B0Ahi0YU7ffLeWJIM2lTeWRnMlk/view?usp=sharing" target="_blank">QMDTS Dataset</a>] [<a href="./data/ReferenceAnnotation.mat" target="_blank">Annotations</a>]</p>
+</div>
+			
+			<div class="page-header">
+				<h3>Introduction</h3>
+
+				<p>The growing rate of public space CCTV installations has generated a need for automated methods for exploiting video surveillance data including scene understanding, query, behaviour annotation and summarization. For this reason, extensive research has been performed on surveillance scene understanding and analysis. However, most studies have considered single scenes, or groups of adjacent scenes. The semantic similarity between different but related scenes (e.g., many different traffic scenes of similar layout) is not generally exploited to improve any automated surveillance tasks and reduce manual effort. 
+				</p>
+				<p align="center"><img  width="80%" src="./img/DatasetSampleFrames_SceneNo_3x9.png"></p>
+				
+<br><br>
+<p>Exploiting commonality, and sharing any supervised annotations, between different scenes is however challenging due to: Some scenes are totally un-related -- and thus any information sharing between them would be detrimental; while others may only share a subset of common activities -- and thus information sharing is only useful if it is selective. Moreover, semantically similar activities which should be modelled together and shared across scenes may have quite different pixel-level appearance in each scene. To address these issues we develop a new framework for distributed multiple-scene global understanding that clusters surveillance scenes by their ability to explain each other's behaviours; and further discovers which subset of activities are shared versus scene-specific within each cluster. We show how to use this structured representation of multiple scenes to improve common surveillance tasks including scene activity understanding, cross-scene query-by-example, behaviour classification with reduced supervised labelling requirements, and video summarization. In each case we demonstrate how our multi-scene model improves on a collection of standard single scene models and a flat model of all scenes. </p>
+<p align="center"><img width="100%" src="./img/WorkflowChart_1row.png"></p>
+			</div>	
+
+			<div class="page-header">
+				
+				<h3>Queen Mary Multi-Camera Distributed Traffic Scenes Dataset (QMDTS)      <img width="5%" src="../../img/NewGif.gif"></h3>
+				<p>The Queen Mary Multi-Camera Distributed Traffic Scenes Dataset (QMDTS) was collected to facilitate the study of transfer learning models for video semantic content analysis and summarisation. This dataset consists of surveillance video footage from 27 distributed and disjoint camera views of busy traffic scenes in urban environments. This dataset includes two existing traffic scene datasets: <a href="http://www.eecs.qmul.ac.uk/~sgg/QMUL_Junction_Datasets/Junction/Junction.html " target="_blank">QMUL Junction Dataset</a> and <a href="http://www.eecs.qmul.ac.uk/~sgg/QMUL_Junction_Datasets/Roundabout/Roundabout.html" target="_blank">QMUL Roundabout Dataset</a> and a brand new 25 traffic scenes collected from urban environment. We release a trimmed train/test raw videos for all of the 27 scenes, named <a href="https://drive.google.com/file/d/0B0Ahi0YU7ffLeWJIM2lTeWRnMlk/view?usp=sharing" target="_blank">Queen Mary Multi-Camera Distributed Traffic Scenes Dataset (QMDTS)</a> along with the <a href="./data/ReferenceAnnotation.mat" target="_blank">reference annotation</a> for 6 scenes. An <a href="./data/Readme" target="_blank">introduction</a> to the dataset and annotations is recommended for properly using the data.<br><br>
+				<p align="center"><img width="60%" src="./img/DatasetSampleFrames_Intro.png"></p>
+				<br><br>
+				
+			</div>
+
+			<div class="page-header">
+				<h3>Multi-Layer Clustering</h3>
+				
+We addressed how to discover related scenes and learn
+shared topics/activities across multiple scenes. At
+the scene level we group related scenes according to activity
+correspondence (Section IV-A); within each scene cluster we
+further compute a shared activity topic basis so that all
+activities within that cluster are expressed in terms of the same
+set of topics  (Section IV-B).
+
+<br><br>
+<p align="center"><img width="80%" src="./img/MultiLayerClustering.png"></p>
+
+			</div>
+
+			<div class="page-header">
+			
+				<h3>Demo</h3>	
+				<h5>Dataset Introduction</h5>
+				<p>27 urban traffic scenes grouped into 11 clusters by our algorithm</p>
+				<p align="left"><iframe width="420" height="315" src="https://www.youtube.com/embed/wZqLgq7p1tE" frameborder="0" allowfullscreen></iframe></p>		
+				<h5>Multi-Scene Profiling</h5>
+				<p>Profile traffic behaviours by a shared activity topic basis.</p>
+<p align="left"><iframe width="420" height="315" src="https://www.youtube.com/embed/ROPN1BL3ReI" frameborder="0" allowfullscreen></iframe></p>
+				<h5>Cross Scene Query</h5>
+				<p>Given query example search for related behaviours in other scenes.</p>
+<p align="left"><iframe width="420" height="315" src="https://www.youtube.com/embed/ABAZ75PObFw" frameborder="0" allowfullscreen></iframe></p>
+				<h5>Multi-Scene Summarization</h5>
+				<p>Summarize representative behaviours in a group of scenes to minimize redundancy.</p>
+<p align="left"><iframe width="420" height="315" src="https://www.youtube.com/embed/SCf9E0lxN4U" frameborder="0" allowfullscreen></iframe></p>
+			</div>
+
+			<div class="page-header">
+				<h3>Citation</h3>
+				<ol>
+				<li>
+								<span class='title'><strong>Discovery of Shared Semantic Spaces for Multi-Scene Video Query and Summarization</strong></span> <a href="../../Doc/Publication/2015/XuHG_TCSVT2015.pdf"><span class="label">PDF</span></a> <a href="../../Doc/Publication/2015/XuHG_TCSVT2015_Supp.pdf"><span class="label">Supplementary</span></a> <b>[In Print]</b> <br>
+								<span class="details">Xun Xu, Timothy Hospedales and Shaogang Gong<br>
+IEEE Transactions on Circuits and Systems for Video Technology, 2015</span>
+								</li></br></br>
+
+				</ol>
+			</div>
+
+			
+		
+
+<!-- <a class="twitter-timeline"  href="https://twitter.com/AlexXunXu"  data-widget-id="365155150601519104">Tweets by @AlexXunXu</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> -->
+
+
+
+		<!-- Footer ================================================== -->
+        <footer class="footer">
+			<p class="pull-right"><a href="#HOME">Back to top</a></p>
+            <p><small>Updated Sep 2015</small></p>
+            <p><small>Page created using <a href="http://twitter.github.com/bootstrap" target="_blank">bootstrap</a></small></p>
+        </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
