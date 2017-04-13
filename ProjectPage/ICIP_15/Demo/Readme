@@ -1,0 +1,14 @@
+Code & Data release for XuEtAl, Semantic Embedding Space for Zero-Shot Action Recognition, ICIP 15 v1.0
+
+Demo:
+
+Run Code/demo/script_ZeroshotHMDB.m to reproduce the result for zero-shot recognition on HMDB51. The result corresponds to Table 1 Method NN
+
+Supporting Data:
+
+BoW encoded feature for HMDB51 and UCF101 are in HMDB_BoW/ and UCF_BoW/ respecti
+vely.
+
+30 random splits for zero-shot learning are given in HMDB_Datasplit/ and UCF_Dat
+asplit/ respectively. The labels for each video are in the same folder.
+
