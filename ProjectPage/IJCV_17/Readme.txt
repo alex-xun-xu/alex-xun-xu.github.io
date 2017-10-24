@@ -9,3 +9,4 @@ Each dataset comes with three encoded descriptors, HOG, HOF and MBH. You may wis
 
 The labels for each video are given in http://pan.baidu.com/s/1nuU6VUT . Note, the CCV dataset is multi-labelled, i.e. each video may be associated with multiple labels.
 
+Alternative to Baidu Disk, both category splits and labels can be downloaded from https://drive.google.com/open?id=0B0Ahi0YU7ffLZnNTLUJsLVh4WWs
