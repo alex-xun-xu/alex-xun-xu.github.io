@@ -1,0 +1,7 @@
+@article{xu2017transductive,
+  title={Transductive Zero-Shot Action Recognition by Word-Vector Embedding},
+  author={Xu, Xun and Hospedales, Timothy and Gong, Shaogang},
+  journal={International Journal of Computer Vision},
+  pages={1--25},
+  publisher={Springer}
+}
