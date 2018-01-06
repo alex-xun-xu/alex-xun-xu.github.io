@@ -1,0 +1,8 @@
+@inproceedings{xu2016multi,
+  title={Multi-Task Zero-Shot Action Recognition with Prioritised Data Augmentation},
+  author={Xu, Xun and Hospedales, Timothy M and Gong, Shaogang},
+  booktitle={European Conference on Computer Vision},
+  pages={343--359},
+  year={2016},
+  organization={Springer}
+}
