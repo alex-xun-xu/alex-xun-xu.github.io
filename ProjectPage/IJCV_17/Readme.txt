@@ -52,10 +52,10 @@ feat_L2 = feat./repmat(sqrt(sum(feat.^2,2))+eps,1,size(feat,2));
 end
 
 %% Power Normalization
-feat_Pow = func_PowerNormalization(feat)
+feat_Pow = func_PowerNormalization(feat,alpha)
 
 signs = sign(feat);
-feat=signs.*(abs(feat).^alpha);
+feat_Pow=signs.*(abs(feat).^alpha);
 
 end
 
