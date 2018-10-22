@@ -28,7 +28,7 @@ HOF_norm = func_L2Normalization(HOF_norm);
 AllFeat = [HOF_norm ; HOG_norm ; MBH_norm];
 
 ####################################
-##	Labels, Splits and Word-Vectors
+##	Labels, Splits, Word-Vectors and Alternative Download Sources
 
 We provide the labels and word-vector representations for each category name in https://pan.baidu.com/s/1cEslaprkH3dWi7A15rZOng. Note, the CCV dataset is multi-labelled, i.e. each video may be associated with multiple labels.
 
