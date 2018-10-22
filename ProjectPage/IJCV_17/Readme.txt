@@ -34,7 +34,7 @@ We provide the labels and word-vector representations for each category name in 
 
 50 random splits for zero-shot evaluation on all 4 datasets are given in https://pan.baidu.com/s/106pqzY-t6UZsLfw_y8S1pg .
 
-Alternative to Baidu Disk, all data can be downloaded from https://drive.google.com/open?id=0B0Ahi0YU7ffLZnNTLUJsLVh4WWs
+Alternative to Baidu Disk, all data and splits can be downloaded from https://drive.google.com/drive/folders/0B0Ahi0YU7ffLZnNTLUJsLVh4WWs?usp=sharing
 
 Reference:
 [1] Xu, X., Hospedales, T. and Gong, S., (2017). Transductive Zero-Shot Action Recognition by Word-Vector Embedding. International Journal of Computer Vision, pp.1-25.
