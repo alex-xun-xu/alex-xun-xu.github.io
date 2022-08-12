@@ -1,0 +1,16 @@
+<b>PhD/Postgraduate/Undergraduate Scholarship Opportunities with A*STAR</b><br>
+We have scholarships covering PhD, postgraduate and undergraduate levels. If you are interested in doing research internship or pursuing PhD degree in computer vision and machine learning, in particular, semi-supervised learning, weakly supervised learning, active learning and 3D point cloud deep learning, please contact Dr. Xun Xu xux@i2r.a-star.edu.sg <br>
+<ul>
+<li> We are looking for highly motivated international students who wish to do PhD in A*STAR, NUS, NTU, SUTD (PhD degree will be conferred by NUS, NTU or SUTD). We provide <b>full scholarship under the SINGA program</b> (<a href='https://www.a-star.edu.sg/Scholarships/for-graduate-studies/singapore-international-graduate-award-singa' target="_blank">check your eligibility</a>).<br>
+<li> We also welcome international full-time PhD students who wish to do research attachment/internship (1-2 years research with A*STAR). <b>Full scholarship under the ARAP program</b> will be provided during the attachment/internship period in Singapore (<a href='https://www.a-star.edu.sg/Scholarships/for-graduate-studies/a-star-research-attachment-programme-(arap)' target="_blank">Check your eligibility</a>)<br>
+<li> We provide scholarship for talented postgraduate/undergraduate students who wish to do research attachment/internship (2-6 months with A*STAR) or prepare to apply for PhD under the SIPGA program (<a href='https://www.a-star.edu.sg/Scholarships/for-undergraduate-studies/singapore-international-pre-graduate-award-(sipga)' target="_blank">Check your availability</a>).
+</ul>
+
+
+PhD/Postgraduate/Undergraduate Scholarship Opportunities with A*STAR
+
+We have scholarships covering PhD, postgraduate and undergraduate levels. If you are interested in doing research internship or pursuing PhD degree in computer vision and machine learning, in particular, semi-supervised learning, weakly supervised learning, active learning and 3D point cloud deep learning, please contact Dr. Xun Xu xux@i2r.a-star.edu.sg
+
+We are looking for highly motivated international students who wish to do PhD in A*STAR, NUS, NTU, SUTD (PhD degree will be conferred by NUS, NTU or SUTD). We provide full scholarship under the SINGA program (check your eligibility https://www.a-star.edu.sg/Scholarships/for-graduate-studies/singapore-international-graduate-award-singa).
+We also welcome international full-time PhD students who wish to do research attachment/internship (1-2 years research with A*STAR). Full scholarship under the ARAP program will be provided during the attachment/internship period in Singapore (check your eligibility https://www.a-star.edu.sg/Scholarships/for-graduate-studies/a-star-research-attachment-programme-(arap))
+We provide scholarship for talented postgraduate/undergraduate students who wish to do research attachment/internship (2-6 months with A*STAR) or prepare to apply for PhD under the SIPGA program (check your eligibility https://www.a-star.edu.sg/Scholarships/for-undergraduate-studies/singapore-international-pre-graduate-award-(sipga)).
