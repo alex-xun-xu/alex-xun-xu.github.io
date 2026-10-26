@@ -16,7 +16,7 @@
       max-width: 1200px; /* Limit the width of the container */
       width: 100%; /* Make it responsive (optional) */
       overflow: hidden; /* Hide items that exceed the height */
-      transition: max-height 0.3s ease; /* Smooth animation for collapsing/expanding */
+      transition: max-height 0.35s ease; /* Match Bootstrap's collapse animation */
       border: 1px solid #ccc; /* Optional: Add a border */
       padding: 10px;
       box-sizing: border-box; /* Include padding in width calculations */
@@ -32,15 +32,6 @@
     }
     .toggle-button {
       margin-top: 10px;
-      padding: 5px 10px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    .toggle-button:hover {
-      background-color: #0056b3;
     }
   </style>
   
@@ -112,6 +103,78 @@ I am a Senior Scientist and Deputy Research Director for the Semiconductor Direc
 
 <div class='container'>
 
+  <button class="btn btn-primary" type="button" data-toggle="collapse"
+          data-target="#biography" aria-expanded="false" aria-controls="biography">
+    Full Biography
+  </button>
+
+  <section id="biography" class="collapse">
+    <div>
+      <h2>Biography</h2>
+
+      <p>
+        I am Deputy Research Director and Senior Scientist II at the Institute
+        for Advanced Intelligence and Computing (IAIC), A*STAR, Singapore.
+        My research focuses on resource-efficient AI, agentic visual reasoning,
+        and robust learning, with particular emphasis on applications in the
+        semiconductor industry.
+      </p>
+
+      <p>
+        I joined A*STAR in December 2019, initially working on data-efficient
+        learning before expanding my research to AI safety and resource
+        efficiency, with applications in 3D deep learning and industrial anomaly
+        detection. During this period, I worked closely with
+        <a href="https://scholar.google.com/citations?user=AgbeqGkAAAAJ&amp;hl=en" target="_blank">Dr. Foo Chuan Sheng</a>.
+        My recent work explores how vision-language models and multimodal
+        reasoning can support learning and adaptation with limited supervision.
+        I lead a project on CAD-informed automated defect detection for
+        semiconductor manufacturing and contribute to research programmes on
+        3D vision and resource-efficient alignment of large language models.
+        Before joining A*STAR, I was a Research Fellow at the National University
+        of Singapore from 2016 to 2019.
+      </p>
+
+      <p>
+        I received my PhD in Computer Science from
+        Queen Mary University of London in 2016, where I was a member of the
+        <a href="http://vision.eecs.qmul.ac.uk/" target="_blank">Computer Vision Group</a>.
+        I was jointly supervised by
+        <a href="https://scholar.google.com/citations?user=Nhi0I8cAAAAJ" target="_blank">Prof. Shaogang Gong</a>
+        and
+        <a href="https://scholar.google.com/citations?user=nHhtvqkAAAAJ" target="_blank">Prof. Timothy Hospedales</a>.
+        My doctoral research explored semantic representations for human
+        behaviour analysis, connecting language modelling with visual data
+        to enable zero-shot action recognition. This work established my
+        interest in learning beyond the limits of labelled training data.
+      </p>
+
+      <p>
+        Before joining QMUL, I received my B.Eng. in Automation and MSc in
+        Control Theory from Sichuan University
+        in 2010 and 2012, respectively. During my undergraduate studies,
+        I was supervised by Prof. Yusheng Liu and Prof. Kai Liu.
+      </p>
+
+      <p>
+        I have supervised and co-supervised more than 30 PhD and master’s
+        students, including visiting researchers from universities in Asia
+        and Europe. Among them, Tiankai Chen received China’s National
+        Scholarship for Doctoral Students.
+      </p>
+
+      <p>
+        I am an IEEE Senior Member and serve on the editorial boards of
+        <em>Machine Vision and Applications</em> and <em>Neural Networks</em>.
+        My area chair appointments include NeurIPS, CVPR, ACM Multimedia,
+        SIGKDD, BMVC, and ICME. I received the Outstanding Area Chair Award
+        at ACM Multimedia 2024 and co-authored a paper that received the
+        Best Academic Paper Award at EPTC 2022. My work on zero-shot action
+        recognition was recognised among the top 10% of papers at ICIP 2015.
+      </p>
+    </div>
+  </section>
+
 	<section id='NEWS'>
 			<div class="page-header">
 				<h3>NEWS<mdall></mdall></h3>
@@ -155,9 +218,10 @@ Point Cloud Deep Learning" (EUDEA) (PI; SGD $238k)</b>
 					<h5><b>Publications & Services</b></h5>
 					
 					<div id="listContainer" class="collapsible-list" style="max-height: 350px;">
+- Oct 2026: I will serve as an Area Chair for <b>ICML 2027</b>.<br>
 - Sep 2026: One paper on <b>Long context QA</b> is accepted by <b>NeurIPS 2026</b>. Congratulations to Jingyi Liao!<br>
 - Sep 2026: I will serve as an Area Chair for <b>ICLR 2027</b>.<br>
-- Aug 2026: One paper on <b>3D VLM</b> is accepted by IEEE TPAMI. Congratulations to Tiankai Chen!<br>
+- Aug 2026: One paper on <b>3D VLM</b> is accepted by <b>IEEE TPAMI</b>. Congratulations to Tiankai Chen!<br>
 - Aug 2026: One paper on <b>Preference Alignment</b> to appear in <b>EMNLP 2026</b>. Congratulations to Fady Rezk!<br>
 - Jul 2026: Congratulations on the <strong>merger of I2R and IHPC</strong> to form the new <strong>IAIC</strong>. I am honored to serve as the <strong>Deputy Research Director</strong> for the <strong>Semiconductor Directorate</strong>, where I will coordinate <strong>AI research and applications</strong> for the <strong>semiconductor industry</strong>.<br>
 - Jun 2026: I will serve as an Area Chair for <b>WACV 2027</b>.<br>
@@ -207,7 +271,7 @@ Point Cloud Deep Learning" (EUDEA) (PI; SGD $238k)</b>
 - Mar 2021: Our work on <a href="#XuEtAl_TCSVT21">Learning Clustering for Motion Segmentation</b></a> has appeared in IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>).
 
   </div>
-  <button id="toggleButton" class="toggle-button">Past News</button>
+  <button id="toggleButton" class="btn btn-primary toggle-button" type="button" aria-controls="listContainer" aria-expanded="false">Past News</button>
 
   <script>
     const listContainer = document.getElementById('listContainer');
@@ -215,15 +279,25 @@ Point Cloud Deep Learning" (EUDEA) (PI; SGD $238k)</b>
 
     let isCollapsed = true; // Start in collapsed state
 
+    function expandNews() {
+      const borderHeight = listContainer.offsetHeight - listContainer.clientHeight;
+      listContainer.style.maxHeight = (listContainer.scrollHeight + borderHeight) + 'px';
+    }
+
     toggleButton.addEventListener('click', () => {
       if (isCollapsed) {
-        listContainer.style.maxHeight = 'none'; // Expand to show all items
+        expandNews(); // Use a measured height so the browser can animate
         toggleButton.textContent = 'Collapse';
       } else {
         listContainer.style.maxHeight = '350px'; // Collapse to fixed height
         toggleButton.textContent = 'Past News';
       }
       isCollapsed = !isCollapsed; // Toggle state
+      toggleButton.setAttribute('aria-expanded', String(!isCollapsed));
+    });
+
+    window.addEventListener('resize', () => {
+      if (!isCollapsed) expandNews();
     });
   </script>
 					
@@ -382,8 +456,9 @@ Point Cloud Deep Learning" (EUDEA) (PI; SGD $238k)</b>
 		<div>
 			<h4>Students</h4>
 			<ul>
-			<li><a href="https://openreview.net/profile?id=~Linzhi_Peng1">Linzhi Peng</a> (CSC funded Visiting PhD Student from Beihang University, Co-supervise with Prof. Bharadwaj VEERAVALLI, 2026.10-Now)</li>
-			<li><a href="https://openreview.net/profile?id=~Yibiao_Hu1">Yibiao Hu</a> (CSC funded Visiting PhD Student from Xidian University, 2026.09-Now)</li>
+			<li><a href="https://openreview.net/profile?id=~Linzhi_Peng1" target="_blank">Linzhi Peng</a> (CSC funded Visiting PhD Student from Beihang University, Co-supervise with Prof. Bharadwaj VEERAVALLI, 2026.10-Now)</li>
+			<li><a href="https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&hl=zh-CN&user=JidDjCwAAAAJ" target="_blank">Kai Mao</a> (CSC funded Visiting PhD Student from Xian Jiaotong University, 2026.10-Now)</li>
+			<li><a href="https://openreview.net/profile?id=~Yibiao_Hu1" target="_blank">Yibiao Hu</a> (CSC funded Visiting PhD Student from Xidian University, 2026.09-Now)</li>
 			<li><a href=#>Zhen Liang</a> (CSC funded Visiting PhD Student from University of Chinese Academy of Sciences, Co-supervise with Dr. Yang Feng, 2025.09-Now)</li>
 			<li><a href="https://scholar.google.com/citations?user=4RmNmQcAAAAJ&hl=en" target="_blank">Bryan Wong</a> (ARAP funded Visiting PhD Student from Korea Advanced Institute of Science & Technology (KAIST), 2026.06-Now)</li>
 			<li><a href=#>Youhao Chen</a> (Master Student from National University of Singapore, 2026.09-Now)</li>
@@ -393,7 +468,7 @@ Point Cloud Deep Learning" (EUDEA) (PI; SGD $238k)</b>
 			<li><a href=#>Yuliang Chen</a> (Project Funded Master Student from National University of Singapore, 2026.03-Now)</li>
 			<li>Kia Jia Han (Project Funded Undergraduate Student from Singapore University of Technology and Design, Co-supervise with Dr. Cai Lile, 2026.05-Now)</li>
 			<li><a href="https://www.linkedin.com/in/ashutosh-alung-b478b62b7/">Alung Ashutosh</a> (Project Funded Undergraduate Student from University of Western Australia, Co-supervise with Dr. Cai Lile, 2026.06-Now)</li>
-			<li><a href="https://scholar.google.com/citations?user=8h7YTFMAAAAJ&hl=en">Jinya Sakurai</a> (Part-time Research Attachment from Nanyang Technological University, Main supervisor: Prof. Jaehong Yoon, 2026.08-Now)</li>
+			<li><a href="https://scholar.google.com/citations?user=8h7YTFMAAAAJ&hl=en" target="_blank">Jinya Sakurai</a> (Part-time Research Attachment from Nanyang Technological University, Main supervisor: Prof. Jaehong Yoon, 2026.08-Now)</li>
 			</ul>
 
 			
@@ -404,7 +479,7 @@ Point Cloud Deep Learning" (EUDEA) (PI; SGD $238k)</b>
         data-toggle="collapse"
         data-target="#pastMembers"
         aria-expanded="false">
-    Show / Hide Past Members
+    Show Past Members
 </button>
 
 <div id="pastMembers" class="collapse" style="margin-top:10px;">
@@ -448,6 +523,19 @@ Point Cloud Deep Learning" (EUDEA) (PI; SGD $238k)</b>
 <b>*</b> Corresponding Author   <b>#</b> Equal Contribution
 
 		<h4>Preprint</h4>
+
+		<div class="row" id="ChengEtAl_SVICL26">
+			<div class="col-md-3"><img src="./img/ChengEtAl_SVICL26.png" width="230" style="border-style: none">
+			</div>
+			<div class="col-md-9">
+				<span class="title"><strong>MAG: MAnifold Guided Semi-Supervised Multi-modal In-Context Learning</strong></span>
+				<a href="https://arxiv.org/abs/2608.12724" target="_blank"><span class="label label-default">PDF</span></a>
+				<br>
+				<span class="details">Zirui Cheng, <b>Xun Xu</b>, Tiankai Chen, Fady Rezk, Bowen Zheng, Xiaodong Shi, Shijie Li, Kangkang Lu, Bharadwaj Veeravalli, Nancy F Chen<br>
+					ArXiv, 2026</span>
+			</div>
+		</div>
+		<br>
 
 		
 		
@@ -1534,6 +1622,19 @@ ass="label label-default">PDF</span></a>
 	<p><small>Updated Sep 2026</small></p>
 	<!-- <p><small>Page created using <a href="http://twitter.github.com/bootstrap" target="_blank">bootstrap</a></small></p> -->
 </div>
+
+<script>
+  [
+    { target: '#biography', showLabel: 'Full Biography', hideLabel: 'Hide' },
+    { target: '#pastMembers', showLabel: 'Show Past Members', hideLabel: 'Hide Past Members' }
+  ].forEach(({ target, showLabel, hideLabel }) => {
+    const button = document.querySelector('[data-target="' + target + '"]');
+    $(target).on('show.bs.collapse hide.bs.collapse', function (event) {
+      if (event.target !== this) return;
+      button.textContent = event.type === 'show' ? hideLabel : showLabel;
+    });
+  });
+</script>
 
 </body>
 </html>
